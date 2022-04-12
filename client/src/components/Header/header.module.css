@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, rgba(66, 66, 66, 0.49) 0%, rgba(66, 66, 66, 0.4753) 76.04%, rgba(66, 66, 66, 0) 100%);
+}
+.title{
+    color: white;
+    margin:20px;
+    text-decoration: none;
+}
+
+.options {
+    display: flex;
+}
+
+.link {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}

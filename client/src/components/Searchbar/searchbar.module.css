@@ -1,0 +1,14 @@
+.searchbar {
+    width: 99%;
+}
+.searchbar > form > input{
+    text-align: center;
+    color: white;
+    border: none;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.085);
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.5rem;
+    padding:15px 0px 10px 0px;
+    margin: 0;
+}

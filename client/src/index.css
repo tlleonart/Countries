@@ -1,0 +1,13 @@
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/22/448612-Earth-space.jpg");
+  background-size: cover;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
