@@ -33,7 +33,7 @@ function Filtros() {
   };
 
   return (
-    <div>
+    <div className={s.filtros}>
       <select className={s.continentes} onChange={handleContinentes}>
         <option value="Continente" onChange={handleContinentes}>
           Continente

@@ -6,6 +6,7 @@ import Add from "./pages/add/Add";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchCountries } from "./actions/actions";
+import Landing from "./pages/landing/Landing";
 
 function App() {
   const dispatch = useDispatch();
@@ -17,7 +18,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/add" element={<Add />} />
       </Routes>

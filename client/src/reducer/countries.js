@@ -10,7 +10,6 @@ import {
 const initialState = {
   countries: [],
   displayCountries: [],
-  loading: true,
   error: "",
 };
 
@@ -24,13 +23,11 @@ export default function countriesReducer(
         ...state,
         countries: payload,
         displayCountries: payload,
-        loading: false,
       };
     case SEARCH_COUNTRY:
       return {
         ...state,
         displayCountries: payload,
-        loading: false,
       };
     case ORDENAR_NOMBRE:
       let sortedCountries = [...state.countries];

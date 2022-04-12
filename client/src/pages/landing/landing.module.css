@@ -1,0 +1,27 @@
+.landing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    background: linear-gradient(127.44deg, #5050509b , #383838);
+    display: flex;
+    height: 90vh;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    object-fit: none;
+  }
+  
+  .content {
+    width: 80%;
+  }
+  
+  .link{
+      color: white;
+      text-decoration: none;
+  }

@@ -13,7 +13,7 @@ function Pagination({ page, setPage, maxPage }) {
   };
 
   return (
-    <div className={s.pagination}>
+    <div className={s.paginacion}>
       <button onClick={prevPage}> {"<"} </button>
       <span> {page} </span>
       <button onClick={nextPage}> {">"} </button>

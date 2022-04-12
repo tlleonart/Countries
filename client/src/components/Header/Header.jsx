@@ -14,11 +14,11 @@ function Header() {
 
   return (
     <div className={s.header}>
-      <Link to="/" className={s.title} onClick={handleClick}>
+      <Link to="/home" className={s.title} onClick={handleClick}>
         <h1>Henry Countries</h1>
       </Link>
       <div className={s.options}>
-        <Link to="/" className={s.link} onClick={handleClick}>
+        <Link to="/home" className={s.link} onClick={handleClick}>
           Home
         </Link>
         <Link to="/add" className={s.link}>

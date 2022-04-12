@@ -18,7 +18,7 @@ function MainContainer({ countries }) {
       : countries.slice(page * 10 - 1, page * 10 + 9);
 
   return (
-    <div>
+    <div className={s.contenedor}>
       <div className={s.maincontainer}>
         {filteredCountries.map((c) => {
           return (
