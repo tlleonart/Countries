@@ -138,6 +138,14 @@ function AddForm() {
           </div>
           <div className={s.countries}>
             <button onClick={handleClick}>Click para seleccionar países</button>
+            <div>
+              <h3>Países seleccionados:</h3>
+              <ul className={s.ul}>
+                {newAct.countries.map((e) => (
+                  <li key={e}>{e}</li>
+                ))}
+              </ul>
+            </div>
             {showErrors &&
               messages.map((e) => {
                 return (
@@ -171,7 +179,9 @@ function AddForm() {
           <button className={s.btn}>Agregar</button>
         </>
       )}
-      {showSuccess && <div>Actividad creada con éxito!</div>}
+      {showSuccess && (
+        <div className={s.success}>Actividad creada con éxito!</div>
+      )}
     </form>
   );
 }
