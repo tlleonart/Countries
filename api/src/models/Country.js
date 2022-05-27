@@ -31,6 +31,10 @@ module.exports = (sequelize) => {
       pop: {
         type: DataTypes.STRING,
       },
+      image: {
+        type: DataTypes.STRING,
+      },
+
     },
     {
       charset: "utf8",
@@ -40,12 +44,3 @@ module.exports = (sequelize) => {
     }
   );
 };
-
-/* id: c.cioc,
-            name: c.translations.spa.common,
-            img: c.flag,
-            continent: c.continents[0],
-            capital: c.capital[0],
-            subregion: c.subregion,
-            area: c.area,
-            pop: c.population, */

@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./pagination.module.css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Pagination({ page, setPage, maxPage }) {
   const prevPage = (e) => {
@@ -14,9 +15,18 @@ function Pagination({ page, setPage, maxPage }) {
 
   return (
     <div className={s.paginacion}>
-      <button onClick={prevPage}> {"<"} </button>
-      <span> {page} </span>
-      <button onClick={nextPage}> {">"} </button>
+      <button onClick={prevPage}>
+        {" "}
+        <FaArrowLeft />{" "}
+      </button>
+      <span>
+        {" "}
+        Página {page + 1} de {maxPage + 1}{" "}
+      </span>
+      <button onClick={nextPage}>
+        {" "}
+        <FaArrowRight />{" "}
+      </button>
     </div>
   );
 }

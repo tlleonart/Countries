@@ -1,24 +1,24 @@
 .paginacion {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 30%;
-    margin: 0 0 20px 0;
-    font-size: 30px;
-    background: linear-gradient(214.44deg, #5050507b , #383838);
-    padding: 6px;
-    border: 1px solid white;
-  }
-  
-  .paginacion > button {
-    border: none;
-    width: 50px;
-    height: 100%;
-    font-size: 30px;
-    background-color: rgba(232, 232, 232, 0.26);
-    cursor: pointer;
-    border: 1px solid white;
-  }
-  
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  padding: 6px;
+}
+
+.paginacion > button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: rgba(251, 135, 58, 0.895);
+  cursor: pointer;
+  border-radius: 99px;
+}

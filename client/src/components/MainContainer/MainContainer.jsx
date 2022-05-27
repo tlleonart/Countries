@@ -12,10 +12,11 @@ function MainContainer({ countries }) {
   useEffect(() => {
     setPage(0);
   }, [countries]);
+
   const filteredCountries =
     page === 0
-      ? countries.slice(0, 9)
-      : countries.slice(page * 10 - 1, page * 10 + 9);
+      ? countries.slice(0, 10)
+      : countries.slice(page * 10, page * 10 + 10);
 
   return (
     <div className={s.contenedor}>

@@ -1,27 +1,27 @@
+@font-face {
+  font-family: gaboFont;
+  src: url("../../assets/gaboFont.otf") format("opentype");
+}
+
 .landing {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    background: linear-gradient(127.44deg, #5050509b , #383838);
-    display: flex;
-    height: 90vh;
-    border: 1px solid white;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image {
-    width: 100%;
-    object-fit: none;
-  }
-  
-  .content {
-    width: 80%;
-  }
-  
-  .link{
-      color: white;
-      text-decoration: none;
-  }
+  font-family: gaboFont;
+  width: 100%;
+  height: 1000px;
+  background: url("../../assets/bg2.png");
+  background-size: cover;
+  display: flex;
+}
+
+.content {
+  margin: 100px;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  text-decoration: none;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.303);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

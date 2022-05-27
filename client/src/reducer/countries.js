@@ -2,6 +2,7 @@ import {
   FETCH_COUNTRIES,
   FILTRAR_ACTIVIDAD,
   FILTRAR_CONTINENTE,
+  FILTRAR_ESTACION,
   ORDENAR_NOMBRE,
   ORDENAR_POBLACION,
   SEARCH_COUNTRY,
@@ -72,6 +73,13 @@ export default function countriesReducer(
         ...state,
         displayCountries: state.countries.filter(
           (e) => e.continent === payload
+        ),
+      };
+    case FILTRAR_ESTACION:
+      return {
+        ...state,
+        displayCountries: state.countries.filter((c) =>
+          c.activities.filter((a) => a.season.includes(payload))
         ),
       };
     default:

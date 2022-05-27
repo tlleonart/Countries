@@ -3,6 +3,7 @@ import {
   FETCH_ONE,
   FILTRAR_ACTIVIDAD,
   FILTRAR_CONTINENTE,
+  FILTRAR_ESTACION,
   ORDENAR_NOMBRE,
   ORDENAR_POBLACION,
   SEARCH_COUNTRY,
@@ -62,4 +63,8 @@ export function fetchActividades() {
   return (dispatch) => {
     return axios.get(`http://localhost:3001/api/activity/`).then((r) => r.data);
   };
+}
+
+export function filtrarEstacion(estacion) {
+  return { type: FILTRAR_ESTACION, payload: estacion };
 }

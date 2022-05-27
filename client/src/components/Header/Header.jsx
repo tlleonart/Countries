@@ -4,6 +4,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { fetchCountries } from "../../actions/actions";
+import Searchbar from "../Searchbar/Searchbar";
+import { GiEarthAmerica } from "react-icons/gi";
 
 function Header() {
   const dispatch = useDispatch();
@@ -15,7 +17,9 @@ function Header() {
   return (
     <div className={s.header}>
       <Link to="/home" className={s.title} onClick={handleClick}>
-        <h1>Henry Countries</h1>
+        <h1 className={s.title}>
+          <GiEarthAmerica /> Henry Countries{" "}
+        </h1>
       </Link>
       <div className={s.options}>
         <Link to="/home" className={s.link} onClick={handleClick}>
@@ -25,6 +29,7 @@ function Header() {
           Nueva Actividad
         </Link>
       </div>
+      <Searchbar />
     </div>
   );
 }

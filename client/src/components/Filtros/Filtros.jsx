@@ -4,6 +4,7 @@ import {
   fetchCountries,
   filtrarActividad,
   filtrarContinente,
+  filtrarEstacion,
 } from "../../actions/actions";
 import s from "./filtros.module.css";
 import axios from "axios";
@@ -24,6 +25,12 @@ function Filtros() {
     e.target.value === "Continente"
       ? dispatch(fetchCountries())
       : dispatch(filtrarContinente(e.target.value));
+  };
+
+  const handleSeason = (e) => {
+    e.target.value === "Estación"
+      ? dispatch(fetchCountries())
+      : dispatch(filtrarEstacion(e.target.value));
   };
 
   const handleActividad = (e) => {
@@ -59,6 +66,13 @@ function Filtros() {
         <option onChange={handleContinentes} value="Oceania">
           Oceanía
         </option>
+      </select>
+      <select onChange={handleSeason}>
+        <option value="Estación">Estación</option>
+        <option value="Otoño">Otoño</option>
+        <option value="Verano">Verano</option>
+        <option value="Invierno">Invierno</option>
+        <option value="Primavera">Primavera</option>
       </select>
       <select className={s.tipo} onChange={handleActividad}>
         <option>Actividad</option>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { fetchCountries, searchCountry } from "../../actions/actions";
-import Filtros from "../Filtros/Filtros";
 import Order from "../Order/Order";
 import s from "./searchbar.module.css";
 
@@ -38,7 +37,6 @@ function Searchbar() {
       </form>
       <div className={s.botones}>
         <Order />
-        <Filtros />
       </div>
     </div>
   );

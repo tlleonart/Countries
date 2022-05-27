@@ -4,7 +4,7 @@ const { Activity, Country } = require("../db");
 const getCountriesAPI = require("../services/getCountriesAPI");
 const getCountriesDb = require("../services/getCountriesDB");
 const getCountriesName = require("../services/getCountriesName");
-const getCountryId = require("../services/getCountryId");
+
 
 const router = Router();
 
